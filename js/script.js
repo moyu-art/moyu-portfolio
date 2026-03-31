@@ -18,30 +18,35 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-
-// 1. 判定の基準（オプション）を先に作る
+// 1. 判定の基準（オプション）
 const options = {
     root: null,
-    rootMargin: "-10% 0px", // 画面の中央10%くらいに入ったら発動
+    rootMargin: "-10% 0px", 
     threshold: 0
 };
-// 監視した時の動き
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // 画面に入ったら "show" クラスをつける
-            entry.target.classList.add('show');
-        }
-    });
-}, options);
 
-// 監視対象をすべて取得して、ガードマンに渡す
+// 2. 監視した時の動き
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { // ← ここで entry を定義しています
+        if (entry.isIntersecting) { // 【43行目付近】ここが中に入っている必要があります
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); 
+        }
+    }); // ← forEach の閉じ
+}, options); // ← observer の閉じ
+
+// 3. 監視を開始する
 const targets = document.querySelectorAll('.text-section, .gallery-item');
 targets.forEach(target => {
     observer.observe(target);
 });
-if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            // 【追加】一度表示したら、その要素の監視をやめる（動作も軽くなります）
-            observer.unobserve(entry.target); 
-        }
+
+// --- この下に Read More のコードを続けて書きます ---
+
+const galleryBtn = document.getElementById('read-more-btn');
+const galleryContainer = document.getElementById('gallery-container');
+
+galleryBtn.addEventListener('click', () => {
+    galleryContainer.classList.add('open'); // 高さを全開にする
+    galleryBtn.style.display = 'none'; // ボタンを消す
+});

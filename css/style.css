@@ -261,7 +261,44 @@ h4 {
     align-items: center; /* すべて中央に */
     width: 100%;
 }
+/* 1. ギャラリーの初期状態（例：画像2枚分くらいの高さで止める） */
+#gallery-container {
+    max-height: 1000px; /* ここで見せたい範囲を調整 */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 1.0s ease-in-out; /* スルスル開くアニメーション */
+}
 
+/* 2. ボタンを押した後に付与するクラス */
+#gallery-container.open {
+    max-height: 50000px; /* 十分に大きな数値にして全開にする */
+}
+#gallery-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(255,255,240,0), rgba(255,255,240,1));
+    pointer-events: none; /* 下の画像をクリックできるように */
+    transition: opacity 0.5s;
+}
+
+#gallery-container.open::after {
+    opacity: 0; /* 開いたらグラデーションを消す */
+}
+/* 3. ボタンのデザイン（もゆさんのサイトに合わせたシンプルめ） */
+.read-more-style {
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+    color: #5AAC88;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #5AAC88;
+    width: fit-content;
+    margin: 20px auto;
+}
 .gallery-item {
     margin-top: 300px; /* セットごとの間隔 */
     width: 80%;
@@ -310,6 +347,7 @@ h4 {
     opacity: 1;
     transform: translateY(0);
 }
+
 footer {
   position: static;
   
