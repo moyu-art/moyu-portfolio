@@ -265,7 +265,7 @@ h4 {
 .gallery-item {
     margin-top: 300px; /* セットごとの間隔 */
     width: 80%;
-    max-width: 600px; /* PCで見ても広がりすぎないように */
+    max-width: 400px; /* PCで見ても広がりすぎないように */
     text-align: center;
 }
 .gallery-item:first-child {
