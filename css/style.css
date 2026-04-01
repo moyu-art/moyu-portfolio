@@ -247,8 +247,8 @@ h4 {
     margin-bottom: 0;
 }
 .poem {
-   display: inline-block;
-  margin-bottom: 15px
+  
+  vertical-align: 3px; 
    font-weight: 300;
 }
 #concept-text {
