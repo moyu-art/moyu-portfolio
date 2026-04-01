@@ -248,8 +248,8 @@ h4 {
 }
 .poem {
    display: inline-block;
-   transform: rotate(-7deg);
-   font-weight: 300;
+  padding-bottom: 15px
+   font-weight: 200;
 }
 #concept-text {
     margin-top: 300px; /* テキスト間の余白 */
