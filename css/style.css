@@ -309,6 +309,19 @@ h4 {
     width: fit-content;
     margin: 100px auto;
 }
+.btn-gradient-radius {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #5AAC88 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+  background-image: linear-gradient(45deg, #5AAC88 0%, #658038 100%);
+}
 .gallery-item {
     margin-top: 300px; /* セットごとの間隔 */
     width: 80%;
