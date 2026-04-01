@@ -251,6 +251,9 @@ h4 {
   vertical-align: 3px; 
    font-weight: 300;
 }
+.name-moyu {
+    font-size: clamp(14px, 2vw, 17px);
+}
 #concept-text {
     margin-top: 300px; /* テキスト間の余白 */
 }
