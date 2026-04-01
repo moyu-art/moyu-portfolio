@@ -247,8 +247,8 @@ h4 {
     margin-bottom: 0;
 }
 .poem {
-  
-  transform: rotate(-10deg);
+  display: inline-block;
+　transform: rotate(-10deg);
   font-weight: 300;
 }
 #concept-text {
