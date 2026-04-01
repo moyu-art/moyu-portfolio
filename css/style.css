@@ -181,6 +181,11 @@ font-weight: 100;
     z-index: 52;
 
 }
+.poem{
+  color: #e67399;
+  transform: rotate(7deg);
+  font-weight: 300;
+}
 main {
     flex: 1; /* これにより、footerを下に押し出す力が働きます */
     width: 100%;
