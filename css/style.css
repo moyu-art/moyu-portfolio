@@ -252,7 +252,7 @@ h4 {
    font-weight: 300;
 }
 .name-moyu {
-    font-size: clamp(14px, 2vw, 17px);
+    font-size: clamp(20px, 2vw, 24px);
 }
 #concept-text {
     margin-top: 300px; /* テキスト間の余白 */
