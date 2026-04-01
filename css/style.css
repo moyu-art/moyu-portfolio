@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
     background-color: #FFFFF0;
     font-family: "M PLUS 1", sans-serif;
-  font-weight: 100;
+  font-weight: 145;
   font-style: normal;
   color: #242424;
   margin: 0;
@@ -167,7 +167,7 @@ h1 {
    left: 3dvw;
    top: 3dvh;
     position: fixed;
-  font-weight: 100;
+  font-weight: 140;
     font-size: clamp(20px, 2vw, 24px);
     z-index: 52;
  
@@ -175,7 +175,7 @@ h1 {
 h2 {
     margin-top: 200px;
     text-align: center;
-font-weight: 100;
+font-weight: 150;
     font-size: clamp(12px, 2vw, 15px);
     line-height: 2;
     z-index: 52;
@@ -230,7 +230,7 @@ h4 {
     margin-top: 50px;
     margin-bottom: 2.5rem; 
     padding-left: 5dvw;
-     font-weight: 100;
+     font-weight: 170;
    font-size: clamp(14px, 2vw, 18px);
 }
 
