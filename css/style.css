@@ -300,6 +300,15 @@ h4 {
     width: fit-content;
     margin: 20px auto;
 }
+.more-style2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+   border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: fit-content;
+    margin: 20px auto;
+}
 .gallery-item {
     margin-top: 300px; /* セットごとの間隔 */
     width: 80%;
