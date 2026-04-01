@@ -325,7 +325,9 @@ h4 {
   background-image: linear-gradient(45deg, #5AAC88 0%, #556b2f 100%);
   transition: .4s;
 }
-
+.btn-gradient-radius a:visited {
+  color: #FFFFF0; /* 訪問済みのリンクの色 */
+}
 .btn-gradient-radius:hover {
   background-image: linear-gradient(45deg, #5AAC88 0%, #658038 100%);
 }
