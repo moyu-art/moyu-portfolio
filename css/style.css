@@ -426,6 +426,7 @@ footer {
 }
 .footer-text p {
         padding-left: 0;
+        padding-right: 0;
 }
 /* 既存の共通設定 */
 #concept, #prof, #gallery {
