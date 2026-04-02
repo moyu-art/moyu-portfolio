@@ -240,6 +240,7 @@ h4 {
     margin-bottom: 2rem;   /* 段落と段落の間の余白（brを2回打つ代わり） */
     line-height: 2;       /* 1行ごとの高さ（読みやすさの調整） */
     padding-left: 5dvw;
+    padding-right: 5dvw;
     font-size: clamp(16px, 2vw, 17px);
 }
 
